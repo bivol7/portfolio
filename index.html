@@ -23,7 +23,7 @@
   --radius:30px;
 
   /* حجم صورة الشخصية — غيّر الرقم فقط */
-  --portrait-size: min(85vw, 700px);
+  --portrait-size: min(42vw, 430px);
 }
 
 *{box-sizing:border-box}
@@ -96,8 +96,9 @@ button{border:0;color:inherit;cursor:pointer}
 .portrait-side{min-height:650px;display:grid;place-items:end center;position:relative}
 .portrait-glow{position:absolute;width:65%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(190,215,255,.16),transparent 65%);filter:blur(25px)}
 .portrait-frame{
-  width:min(var(--portrait-size), 560px);
-  height:min(72vh, 680px);
+  width:min(var(--portrait-size), 430px);
+  aspect-ratio:1 / 1;
+  height:auto;
   max-width:92%;
   position:relative;
   z-index:2;
@@ -261,8 +262,9 @@ button{border:0;color:inherit;cursor:pointer}
   #home{padding:0 0 50px}
   .portrait-side{order:-1;min-height:54vh}
   .portrait-frame{
-    width:min(82vw,520px);
-    height:min(54vh,560px);
+    width:min(82vw,420px);
+    aspect-ratio:1 / 1;
+    height:auto;
     max-width:92%;
     border-radius:24px;
   }
